@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+</head>
+<body>
+    <div style="text-align: center;">
+    
+    <h1 style="text-align: center;">Voice Navigator</h1>
+    
+    <div><object data="{{ url_for('static', filename='Output.txt')}}"></object></div>
+    <image src="{{ url_for('static', filename='Frame.png')}}"  width="640" height="480"></image> 
+    <image src="{{ url_for('static', filename='Detection.png')}}" width="640" height="480"></image>
+    <image src="{{ url_for('static', filename='DepthMap.png')}}" width="640" height="480"></image>
+    <audio controls>  
+
+        <source src="{{ url_for('static', filename='text.wav')}}" />  Your browser does not support the audio tag.
+    </audio>
+    
+     <!-- <image src="/return-files"></image> -->
+    
+
+</div>
+</body>
+</html>
